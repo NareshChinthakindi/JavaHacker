@@ -1,0 +1,37 @@
+/**
+ * 
+ */
+package com;
+
+import java.util.Random;
+
+/**
+ * @author Naresh_Chinthakindi
+ *
+ */
+public class RandomExamplke {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Random rd = new Random();
+		
+		int max = 9;
+		int min = 0;
+		StringBuilder sb = new StringBuilder();
+		
+		for(int i =0; i<6;i++) {
+			
+			int randInt = rd.nextInt((max-min)+1)+min;
+			//System.out.println(randInt);
+			
+			sb.append(randInt);
+		}
+		
+		System.out.println(sb);
+	}
+
+}
