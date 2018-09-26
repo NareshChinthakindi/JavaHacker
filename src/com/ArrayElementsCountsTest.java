@@ -10,13 +10,12 @@ public class ArrayElementsCountsTest {
 	
 	public static void main(String[] args) {
 		List<String> elements = Arrays.asList("Naresh", "Suresh", "Ramesh", "Gopal", "Naresh", "Naresh", "Gopal");
-		
-	final Map<String, Long> elementsWithCount =	elements.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-
 	
-	      elementsWithCount.forEach((k,v) ->{
-	    	  System.out.println(k +" "+v);
-	      });
+		Map<String, Long> val = elements.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+		
+		val.forEach((k,v) ->{
+			System.out.println(k+" : Count: "+v);
+		});
 	
 	}
 

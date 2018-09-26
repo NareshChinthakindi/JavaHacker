@@ -26,7 +26,7 @@ List<String> elements = Arrays.asList("Naresh", "Suresh", "Ramesh", "Gopal", "AN
 
  Map<String, Long> elementsWithCount = elements.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
  
-  Map<Object, Object> sortingElements = new LinkedHashMap<>();
+  Map<String, String> sortingElements = new LinkedHashMap<>();
   
  /*elementsWithCount.keySet().stream().sorted().map(String::toString).forEach(e ->{
 	 sortingElements.put(e, elementsWithCount.get(e));

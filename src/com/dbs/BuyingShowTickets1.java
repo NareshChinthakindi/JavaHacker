@@ -4,8 +4,8 @@ public class BuyingShowTickets1 {
 
 	public static void main(String[] args) {
 
-		int[] tickets = { 5, 5, 2, 3 };
-		int position = 2;
+		int[] tickets = { 8, 5, 2, 3 };
+		int position = 1;
 		System.out.println("numberOfSecondsNeededForPsTickets :" + waitingTime(tickets, position));
 	}
 
@@ -19,6 +19,7 @@ public class BuyingShowTickets1 {
 				numberOfSeconds = numberOfSeconds + neededTickets[i];
 		}
 
+		
 		for (int i = position + 1; i < neededTickets.length; i++) {
 			if (neededTickets[i] >= neededTickets[position])
 				numberOfSeconds = numberOfSeconds + (neededTickets[position] - 1);

@@ -23,9 +23,8 @@ public class ArrayLengthStreamsTest {
 		List<String> elements = Arrays.asList("Naresh", "Suresh", "Ramesh", "Gopal");
 		
 		List<Integer> elementsLength = elements.stream().map(String::length).collect(Collectors.toList());
-	
-		elementsLength.forEach(System.out::println);
 		
+		elementsLength.forEach(System.out::println);
 		
 	}
 

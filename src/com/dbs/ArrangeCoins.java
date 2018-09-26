@@ -4,6 +4,8 @@ public class ArrangeCoins {
 	public static void arrangeCoins(int length, long[] coins) {
 		for (int index = 0; index < coins.length; index++) {
 			long d = 1 + (8 * coins[index]);
+			
+			//long d = coins[index];
 			System.out.println("d "+d);
 			System.out.println(Math.sqrt(d));
 			System.out.println((-1 + Math.sqrt(d)));
@@ -14,7 +16,7 @@ public class ArrangeCoins {
 	}
 
 	public static void main(String[] args) {
-		long arrCoins[] = {11 };
+		long arrCoins[] = {11,3 };
 		arrangeCoins(arrCoins.length, arrCoins);
 	}
 }
