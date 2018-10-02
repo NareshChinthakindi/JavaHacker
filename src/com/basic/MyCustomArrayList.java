@@ -60,5 +60,7 @@ public class MyCustomArrayList<T> {
 		System.out.println(values.get(1));
 
 	}
+	
+	
 
 }
