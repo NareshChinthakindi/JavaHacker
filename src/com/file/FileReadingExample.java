@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.dbs;
+package com.file;
 
 import java.io.IOException;
 import java.nio.file.Files;
